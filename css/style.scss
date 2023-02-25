@@ -1,0 +1,119 @@
+// body
+// {
+//     background-color: aqua;
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: sans-serif, Arial, Helvetica;
+
+// }
+
+:root
+{
+    --color1: #F8B78B;
+    --color2: #FCB173;
+
+}
+
+html
+{
+    box-sizing: border-box;
+    font-size: 65.5%;
+    
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family: sans-serif;
+    background-color: var(--color1);
+    background-image: url(../img/fondoTop.svg),url(../img/fondoBotton.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 50vw bottom 50vh,left 50vw,top 50vh;
+
+
+}
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card
+{
+    background-color: white;
+    width: 328px;
+    border-radius: 16px;
+    // overflow: hidden;
+    box-shadow: 2px 2px 15px rgba(233, 148, 78,0.5);
+    overflow: hidden;
+    &-header
+    {
+        width: 100%;
+        display: block;
+
+    }
+    &-body
+    {
+        display: flex;
+        flex-direction: column;
+        // background-color: greenyellow;
+        align-items: center;
+        border-bottom: 1px solid var(--color2);
+
+        &-contentimg
+        {
+            border: 5px solid #f67c55;
+            border-radius: 50%;
+            background-color: #fcd3c6;
+            box-shadow: 0px -10px 20px #f67c55;
+            padding: 10px;
+            margin-top: calc(-50px -8);
+
+        }
+        &-title
+        {
+            margin-top: 2rem;
+            font-size: 3rem;
+            span
+            {
+                color: var(--color2);
+
+            }
+            
+        }
+
+    }
+    &-footer
+    {
+        display: flex;
+        justify-content: space-around;
+        
+        &-poder
+        {
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        &-resistencia
+        {
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        &-bonus
+        {
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+}
